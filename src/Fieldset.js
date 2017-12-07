@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import styled from 'styled-components/native'
+import PropTypes from 'prop-types'
 import defaultTheme from './Theme'
 
 const FieldsetLabelText = styled.Text`
@@ -48,8 +49,8 @@ const Fieldset = props => {
 }
 
 Fieldset.PropTypes = {
-  last: React.PropTypes.bool,
-  label: React.PropTypes.string
+  last: PropTypes.bool,
+  label: PropTypes.string
 }
 
 Fieldset.defaultProps = {
